@@ -56,34 +56,55 @@ main {
     margin-left: 15px;
     font-size: 15px;
     margin-bottom: -20px;
-    color: rgb(32, 216, 124);
+    color: rgb(40, 129, 48);
     text-align: right;
 }
 .product-title-bottom .product-price{
     font-size: 20px;
 }
+
 .product:hover{
-    box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+    box-shadow: 0 4px 150px 0 rgba(90, 105, 86, 0.75);
+
+
 }
-.product-title-top{
+
+
+
+
+.product-title-top p{
+
+    display:none;
+
+}
+.product:hover .product-title-top p{
+    display: block;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 20px;
-    color: rgb(71, 69, 69);
+
+
 
 }
+.product:hover .product-title-bottom .product-desc-box .product-delivery-icon{
+    transform: rotate(-90deg);
+    transition: transform 0.5s ease; 
 
+}
 .product-desc-box > .product-delivery-icon{
     display: block;
     font-size: 16px;
     padding: 5px;
     width: 30px;
     height: 30px;
-    border: 1px solid #39b54a;
+    border: 1px solid #269238;
     background-color: #FFF;
     border-radius: 50%;
-    position: absolute;
+    position: relative;
     right: 20px;
     top: -15px;
+    left: 90px;
+   top: -50px;
+    
     }
     .product-desc-box {
         position: relative;
@@ -145,3 +166,26 @@ textarea {
     color: white;
     height: 30px;
 }
+.buscar{
+    width: 80px;
+    height: 40px;
+}
+
+/*
+
+main .info-product .container-description {
+    opacity: 0;
+    height: 0;
+    transition: opacity 300ms ease-in, height 200ms ease-in;
+  }
+
+  main article:hover .info-product .container-description {
+    height: 40px;
+    opacity: 1;
+  }
+
+  main article:hover .info-product .logo-truck {
+    transform: rotate(-90deg);
+  }
+
+*/

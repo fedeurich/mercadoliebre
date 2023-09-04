@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado Liebre</title>
-    <link href="./public/css/style.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
     <header style="background-color: #EAC926">
 
-        <h1>
-            <img src="./images/logo-mercado-liebre.svg" alt="">
+        <h1><a href="index.html"><img src="./images/logo-mercado-liebre.svg" alt=""></a>
+            
         </h1>
             <form action="/resultados" method="get">
         <input type="text" name="q" placeholder="Buscar productos, marcas">
-        <button type="submit">Buscar</button>
+        <button class="buscar" type="submit">Buscar</button>
         
         
         <div class="burger-menu">
@@ -32,8 +32,8 @@
                 <li>Vender</li>
                 <li>Ayuda<br><br></li>
                 
-                <li > <a href="register.html">Crear tu Cuenta</a> <i class="fa-regular fa-address-card"></i> </li>
-                <li>Ingresá <i class="fa-solid fa-right-to-bracket"></i></li>
+                <li > <a href="/register.html">Crear tu Cuenta</a> <i class="fa-regular fa-address-card"></i> </li>
+                <li> <a href="/views/login.html"> Ingresa </a><i class="fa-solid fa-right-to-bracket"></i></li>
                 <li>Mis Compras</li>
 
             </lu>
@@ -43,7 +43,7 @@
         <img src="./images/img-home-banner.jpg" alt="">
     </div>
     <main>
-        <h1>  <a href="register.html">hola </a>  </h1>
+       
         <div class="product">
 
             <img src="./images/img-cafetera-moulinex.jpg" alt="" >
@@ -59,7 +59,11 @@
                 </div>
 
             </div>
-            <div class="product-title-top"> Cafetera Moulinex</div>
+            <div class="product-title-top"> 
+                <p>
+                    Cafetera Moulinex
+                </p>
+            </div>
         </div>
         
         <div class="product">
@@ -77,7 +81,11 @@
                 </div>
 
             </div>
-            <div class="product-title-top"> MacBook Pro 2019</div>
+            <div class="product-title-top"> 
+                <p>
+                    MacBook Pro 2019
+                </p>
+            </div>
         </div>
     
         <div class="product">
@@ -95,7 +103,9 @@
                 </div>
 
             </div>
-            <div class="product-title-top"> Samsung Galaxy S10</div>
+            <div class="product-title-top"><p>
+                Samsung Galaxy S1
+            </p></div>
         </div>
     
 
@@ -116,7 +126,9 @@
                 </div>
 
             </div>
-            <div class="product-title-top"> Samsung 43'</div>
+            <div class="product-title-top"> <p>
+                Samsung 43'
+            </p></div>
         </div>
 
 
